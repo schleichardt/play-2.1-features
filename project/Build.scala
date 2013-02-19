@@ -8,15 +8,13 @@ object ApplicationBuild extends Build {
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
-    // Add your project dependencies here,
     jdbc,
     anorm,
     "junit" % "junit-dep" % "4.11" % "test"
   )
 
-
   val main = play.Project(appName, appVersion, appDependencies).settings(
     requireJs += "main.js"
+    , requireJsFolder := "js" //changes javascripts to js
   )
-
 }
