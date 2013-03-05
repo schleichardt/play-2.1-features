@@ -1,0 +1,11 @@
+@()(implicit token: play.filters.csrf.CSRF.Token)
+
+@import helper._
+
+@csrfContent {
+    @* if CSRF is missing: Invalid CSRF Token, so you can't forget it *@
+    @form(CSRF(routes.Application.csrfProtectedAction()), 'class -> "form-vertical") {
+        <input type="submit" value=" Absenden ">
+    }
+}
+

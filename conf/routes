@@ -5,6 +5,9 @@
 # Home page
 GET     /                           controllers.Application.index
 GET     /2                          controllers.Application.action2
+GET     /csrf-protected-form        controllers.Application.csrfProtectedFormAction
+GET     /csrf-less-form             controllers.Application.csrfLessFormAction
+POST    /csrf-protected             controllers.Application.csrfProtectedAction
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

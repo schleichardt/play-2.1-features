@@ -1,0 +1,8 @@
+@(content: Html)
+
+<ul>
+    <li><a href="@routes.Application.csrfLessFormAction()">without csrf</li>
+    <li><a href="@routes.Application.csrfProtectedFormAction()">with csrf</li>
+</ul>
+
+@content

@@ -11,7 +11,8 @@ object ApplicationBuild extends Build {
     // Add your project dependencies here,
     jdbc,
     anorm,
-    "junit" % "junit-dep" % "4.11" % "test"
+    "junit" % "junit-dep" % "4.11" % "test",
+    filters
   )
 
 

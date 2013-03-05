@@ -1,0 +1,7 @@
+@import helper._
+
+@csrfContent {
+    @form(routes.Application.csrfProtectedAction(), 'class -> "form-vertical") {
+        <input type="submit" value=" Absenden ">
+    }
+}
